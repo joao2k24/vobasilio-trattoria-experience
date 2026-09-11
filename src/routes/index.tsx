@@ -319,12 +319,12 @@ function Home() {
               frescos.
             </SectionTitle>
 
-            <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {pratos.map((p, i) => (
                 <Reveal
                   as="article"
                   key={p.nome}
-                  delay={i * 90}
+                  delay={i * 70}
                   className="group border border-border bg-card shadow-elegant"
                 >
                   <div className="relative overflow-hidden">
@@ -334,33 +334,30 @@ function Home() {
                       loading="lazy"
                       width={1024}
                       height={1024}
-                      className="h-64 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      className="h-56 w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent" />
                   </div>
-                  <div className="p-7">
-                    <h3 className="text-2xl text-cream">{p.nome}</h3>
+                  <div className="p-6">
+                    <h3 className="text-xl text-cream">{p.nome}</h3>
                     <div className="gold-rule mt-3 max-w-[70px]" />
                     <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
                   </div>
                 </Reveal>
               ))}
-
-              <Reveal
-                delay={450}
-                className="flex flex-col items-center justify-center border border-gold/30 bg-transparent p-10 text-center"
-              >
-                <p className="eyebrow">Cardápio completo</p>
-                <p className="mt-4 font-display text-2xl text-cream">
-                  Antipasti, massas frescas, forneria e carta de vinhos
-                </p>
-                <Button asChild className="mt-8 rounded-none uppercase tracking-[0.2em]">
-                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                    Falar com a casa
-                  </a>
-                </Button>
-              </Reveal>
             </div>
+
+            <Reveal delay={200} className="mt-16 flex flex-col items-center text-center">
+              <p className="eyebrow">Cardápio completo</p>
+              <p className="mt-4 max-w-2xl font-display text-2xl text-cream">
+                Antipasti, massas frescas, forneria e carta de vinhos
+              </p>
+              <Button asChild className="mt-8 rounded-none uppercase tracking-[0.2em]">
+                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                  Falar com a casa
+                </a>
+              </Button>
+            </Reveal>
           </div>
         </section>
 
