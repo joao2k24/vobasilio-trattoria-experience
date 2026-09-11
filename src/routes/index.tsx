@@ -12,13 +12,18 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 
 import hero from "@/assets/hero.jpg";
-import bacalhau from "@/assets/bacalhau.jpg";
-import spaghetti from "@/assets/spaghetti.jpg";
-import siri from "@/assets/siri.jpg";
-import cordeiro from "@/assets/cordeiro.jpg";
-import pato from "@/assets/pato.jpg";
 import massas from "@/assets/massas.jpg";
 import vinhos from "@/assets/vinhos.jpg";
+import spaghettiAlMare from "@/assets/spaghetti-al-mare.jpg.asset.json";
+import casquinhaSiriCamarao from "@/assets/casquinha-siri-camarao.jpg.asset.json";
+import carpaccio from "@/assets/carpaccio.jpg.asset.json";
+import bacalhauChefe from "@/assets/bacalhau-chefe.jpg.asset.json";
+import apfelstrudel from "@/assets/apfelstrudel.jpg.asset.json";
+import saladaCamarao from "@/assets/salada-camarao.jpg.asset.json";
+import filetMignonPoivre from "@/assets/filet-mignon-poivre.jpg.asset.json";
+import penneAmatriciana from "@/assets/penne-amatriciana.jpg.asset.json";
+import polvoLavareiro from "@/assets/polvo-lavareiro.jpg.asset.json";
+import filetMadeira from "@/assets/filet-madeira.jpg.asset.json";
 
 const TITLE = "Vô Basílio Trattoria e Forneria | Restaurante Italiano em São João da Boa Vista";
 const DESCRIPTION =
@@ -75,29 +80,54 @@ export const Route = createFileRoute("/")({
 
 const pratos = [
   {
-    nome: "Bacalhau do Chefe",
-    desc: "Um prato especial com sabores marcantes e apresentação refinada.",
-    img: bacalhau,
-  },
-  {
-    nome: "Spaghetti al Mare",
-    desc: "Massa italiana harmonizada com frutos do mar frescos.",
-    img: spaghetti,
+    nome: "Spaghetti Al Mare",
+    desc: "Massa artesanal negra com frutos do mar frescos e toque de azeite trufado.",
+    img: spaghettiAlMare.url,
   },
   {
     nome: "Casquinha de Siri com Camarões",
-    desc: "Entrada sofisticada com combinação de sabores do mar.",
-    img: siri,
+    desc: "Casquinha recheada com siri desfiado e camarões, gratinada ao forno.",
+    img: casquinhaSiriCamarao.url,
   },
   {
-    nome: "Carré de Cordeiro",
-    desc: "Uma experiência gastronômica com molho especial e acompanhamentos selecionados.",
-    img: cordeiro,
+    nome: "Carpaccio",
+    desc: "Finas fatias de filé, rúcula fresca, lascas de parmesão e molho especial.",
+    img: carpaccio.url,
   },
   {
-    nome: "Pato",
-    desc: "Um dos pratos mais elogiados pelos clientes.",
-    img: pato,
+    nome: "Bacalhau do Chefe",
+    desc: "Bacalhau preparado com a receita exclusiva do chef e acompanhamentos selecionados.",
+    img: bacalhauChefe.url,
+  },
+  {
+    nome: "Apfelstrudel",
+    desc: "Clássico austríaco de massa folhada com maçã, servido com sorvete de creme.",
+    img: apfelstrudel.url,
+  },
+  {
+    nome: "Salada de Camarões",
+    desc: "Camarões e lulas grelhados com folhas frescas e vinagrete cítrico.",
+    img: saladaCamarao.url,
+  },
+  {
+    nome: "Filet Mignon Au Poivre",
+    desc: "Filé mignon ao molho de pimenta verde, acompanhado de risoto cremoso.",
+    img: filetMignonPoivre.url,
+  },
+  {
+    nome: "Penne ao Milho Amatriciana",
+    desc: "Penne al dente com milho, pancetta e molho amatriciana da casa.",
+    img: penneAmatriciana.url,
+  },
+  {
+    nome: "Polvo à Lavareiro",
+    desc: "Polvo grelhado com batatas, legumes e azeite de oliva aromatizado.",
+    img: polvoLavareiro.url,
+  },
+  {
+    nome: "Filet ao Molho Madeira",
+    desc: "Filé mignon ao molho madeira com cogumelos e risoto de parmesão.",
+    img: filetMadeira.url,
   },
 ];
 
@@ -117,8 +147,8 @@ const galeria = [
   { src: hero, alt: "Salão interno do Vô Basílio com iluminação acolhedora", span: "sm:col-span-2 sm:row-span-2" },
   { src: massas, alt: "Massas artesanais preparadas à mão", span: "" },
   { src: vinhos, alt: "Adega e taças de vinho tinto", span: "" },
-  { src: spaghetti, alt: "Spaghetti al mare com frutos do mar", span: "" },
-  { src: cordeiro, alt: "Carré de cordeiro com molho especial", span: "" },
+  { src: spaghettiAlMare.url, alt: "Spaghetti Al Mare com frutos do mar", span: "" },
+  { src: carpaccio.url, alt: "Carpaccio com rúcula e parmesão", span: "" },
 ];
 
 function Stars({ className = "" }: { className?: string }) {
@@ -289,12 +319,12 @@ function Home() {
               frescos.
             </SectionTitle>
 
-            <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {pratos.map((p, i) => (
                 <Reveal
                   as="article"
                   key={p.nome}
-                  delay={i * 90}
+                  delay={i * 70}
                   className="group border border-border bg-card shadow-elegant"
                 >
                   <div className="relative overflow-hidden">
@@ -304,33 +334,30 @@ function Home() {
                       loading="lazy"
                       width={1024}
                       height={1024}
-                      className="h-64 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      className="h-56 w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent" />
                   </div>
-                  <div className="p-7">
-                    <h3 className="text-2xl text-cream">{p.nome}</h3>
+                  <div className="p-6">
+                    <h3 className="text-xl text-cream">{p.nome}</h3>
                     <div className="gold-rule mt-3 max-w-[70px]" />
                     <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
                   </div>
                 </Reveal>
               ))}
-
-              <Reveal
-                delay={450}
-                className="flex flex-col items-center justify-center border border-gold/30 bg-transparent p-10 text-center"
-              >
-                <p className="eyebrow">Cardápio completo</p>
-                <p className="mt-4 font-display text-2xl text-cream">
-                  Antipasti, massas frescas, forneria e carta de vinhos
-                </p>
-                <Button asChild className="mt-8 rounded-none uppercase tracking-[0.2em]">
-                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                    Falar com a casa
-                  </a>
-                </Button>
-              </Reveal>
             </div>
+
+            <Reveal delay={200} className="mt-16 flex flex-col items-center text-center">
+              <p className="eyebrow">Cardápio completo</p>
+              <p className="mt-4 max-w-2xl font-display text-2xl text-cream">
+                Antipasti, massas frescas, forneria e carta de vinhos
+              </p>
+              <Button asChild className="mt-8 rounded-none uppercase tracking-[0.2em]">
+                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                  Falar com a casa
+                </a>
+              </Button>
+            </Reveal>
           </div>
         </section>
 
