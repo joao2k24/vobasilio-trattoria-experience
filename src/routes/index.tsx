@@ -12,13 +12,18 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 
 import hero from "@/assets/hero.jpg";
-import bacalhau from "@/assets/bacalhau.jpg";
-import spaghetti from "@/assets/spaghetti.jpg";
-import siri from "@/assets/siri.jpg";
-import cordeiro from "@/assets/cordeiro.jpg";
-import pato from "@/assets/pato.jpg";
 import massas from "@/assets/massas.jpg";
 import vinhos from "@/assets/vinhos.jpg";
+import spaghettiAlMare from "@/assets/spaghetti-al-mare.jpg.asset.json";
+import casquinhaSiriCamarao from "@/assets/casquinha-siri-camarao.jpg.asset.json";
+import carpaccio from "@/assets/carpaccio.jpg.asset.json";
+import bacalhauChefe from "@/assets/bacalhau-chefe.jpg.asset.json";
+import apfelstrudel from "@/assets/apfelstrudel.jpg.asset.json";
+import saladaCamarao from "@/assets/salada-camarao.jpg.asset.json";
+import filetMignonPoivre from "@/assets/filet-mignon-poivre.jpg.asset.json";
+import penneAmatriciana from "@/assets/penne-amatriciana.jpg.asset.json";
+import polvoLavareiro from "@/assets/polvo-lavareiro.jpg.asset.json";
+import filetMadeira from "@/assets/filet-madeira.jpg.asset.json";
 
 const TITLE = "Vô Basílio Trattoria e Forneria | Restaurante Italiano em São João da Boa Vista";
 const DESCRIPTION =
