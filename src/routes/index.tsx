@@ -147,8 +147,8 @@ const galeria = [
   { src: hero, alt: "Salão interno do Vô Basílio com iluminação acolhedora", span: "sm:col-span-2 sm:row-span-2" },
   { src: massas, alt: "Massas artesanais preparadas à mão", span: "" },
   { src: vinhos, alt: "Adega e taças de vinho tinto", span: "" },
-  { src: spaghetti, alt: "Spaghetti al mare com frutos do mar", span: "" },
-  { src: cordeiro, alt: "Carré de cordeiro com molho especial", span: "" },
+  { src: spaghettiAlMare.url, alt: "Spaghetti Al Mare com frutos do mar", span: "" },
+  { src: carpaccio.url, alt: "Carpaccio com rúcula e parmesão", span: "" },
 ];
 
 function Stars({ className = "" }: { className?: string }) {
