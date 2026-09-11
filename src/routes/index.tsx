@@ -80,29 +80,54 @@ export const Route = createFileRoute("/")({
 
 const pratos = [
   {
-    nome: "Bacalhau do Chefe",
-    desc: "Um prato especial com sabores marcantes e apresentação refinada.",
-    img: bacalhau,
-  },
-  {
-    nome: "Spaghetti al Mare",
-    desc: "Massa italiana harmonizada com frutos do mar frescos.",
-    img: spaghetti,
+    nome: "Spaghetti Al Mare",
+    desc: "Massa artesanal negra com frutos do mar frescos e toque de azeite trufado.",
+    img: spaghettiAlMare.url,
   },
   {
     nome: "Casquinha de Siri com Camarões",
-    desc: "Entrada sofisticada com combinação de sabores do mar.",
-    img: siri,
+    desc: "Casquinha recheada com siri desfiado e camarões, gratinada ao forno.",
+    img: casquinhaSiriCamarao.url,
   },
   {
-    nome: "Carré de Cordeiro",
-    desc: "Uma experiência gastronômica com molho especial e acompanhamentos selecionados.",
-    img: cordeiro,
+    nome: "Carpaccio",
+    desc: "Finas fatias de filé, rúcula fresca, lascas de parmesão e molho especial.",
+    img: carpaccio.url,
   },
   {
-    nome: "Pato",
-    desc: "Um dos pratos mais elogiados pelos clientes.",
-    img: pato,
+    nome: "Bacalhau do Chefe",
+    desc: "Bacalhau preparado com a receita exclusiva do chef e acompanhamentos selecionados.",
+    img: bacalhauChefe.url,
+  },
+  {
+    nome: "Apfelstrudel",
+    desc: "Clássico austríaco de massa folhada com maçã, servido com sorvete de creme.",
+    img: apfelstrudel.url,
+  },
+  {
+    nome: "Salada de Camarões",
+    desc: "Camarões e lulas grelhados com folhas frescas e vinagrete cítrico.",
+    img: saladaCamarao.url,
+  },
+  {
+    nome: "Filet Mignon Au Poivre",
+    desc: "Filé mignon ao molho de pimenta verde, acompanhado de risoto cremoso.",
+    img: filetMignonPoivre.url,
+  },
+  {
+    nome: "Penne ao Milho Amatriciana",
+    desc: "Penne al dente com milho, pancetta e molho amatriciana da casa.",
+    img: penneAmatriciana.url,
+  },
+  {
+    nome: "Polvo à Lavareiro",
+    desc: "Polvo grelhado com batatas, legumes e azeite de oliva aromatizado.",
+    img: polvoLavareiro.url,
+  },
+  {
+    nome: "Filet ao Molho Madeira",
+    desc: "Filé mignon ao molho madeira com cogumelos e risoto de parmesão.",
+    img: filetMadeira.url,
   },
 ];
 
