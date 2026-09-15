@@ -14,16 +14,16 @@ import { Textarea } from "@/components/ui/textarea";
 import hero from "@/assets/hero.jpg";
 import massas from "@/assets/massas.jpg";
 import vinhos from "@/assets/vinhos.jpg";
-import spaghettiAlMare from "@/assets/spaghetti-al-mare.jpg.asset.json";
-import casquinhaSiriCamarao from "@/assets/casquinha-siri-camarao.jpg.asset.json";
-import carpaccio from "@/assets/carpaccio.jpg.asset.json";
-import bacalhauChefe from "@/assets/bacalhau-chefe.jpg.asset.json";
-import apfelstrudel from "@/assets/apfelstrudel.jpg.asset.json";
-import saladaCamarao from "@/assets/salada-camarao.jpg.asset.json";
-import filetMignonPoivre from "@/assets/filet-mignon-poivre.jpg.asset.json";
-import penneAmatriciana from "@/assets/penne-amatriciana.jpg.asset.json";
-import polvoLavareiro from "@/assets/polvo-lavareiro.jpg.asset.json";
-import filetMadeira from "@/assets/filet-madeira.jpg.asset.json";
+import spaghettiAlMare from "@/assets/spaghetti-al-mare.jpg";
+import casquinhaSiriCamarao from "@/assets/casquinha-siri-camarao.jpg";
+import carpaccio from "@/assets/carpaccio.jpg";
+import bacalhauChefe from "@/assets/bacalhau-chefe.jpg";
+import apfelstrudel from "@/assets/apfelstrudel.jpg";
+import saladaCamarao from "@/assets/salada-camarao.jpg";
+import filetMignonPoivre from "@/assets/filet-mignon-poivre.jpg";
+import penneAmatriciana from "@/assets/penne-amatriciana.jpg";
+import polvoLavareiro from "@/assets/polvo-lavareiro.jpg";
+import filetMadeira from "@/assets/filet-madeira.jpg";
 
 const TITLE = "Vô Basílio Trattoria e Forneria | Restaurante Italiano em São João da Boa Vista";
 const DESCRIPTION =
@@ -82,52 +82,52 @@ const pratos = [
   {
     nome: "Spaghetti Al Mare",
     desc: "Massa artesanal negra com frutos do mar frescos e toque de azeite trufado.",
-    img: spaghettiAlMare.url,
+    img: spaghettiAlMare,
   },
   {
     nome: "Casquinha de Siri com Camarões",
     desc: "Casquinha recheada com siri desfiado e camarões, gratinada ao forno.",
-    img: casquinhaSiriCamarao.url,
+    img: casquinhaSiriCamarao,
   },
   {
     nome: "Carpaccio",
     desc: "Finas fatias de filé, rúcula fresca, lascas de parmesão e molho especial.",
-    img: carpaccio.url,
+    img: carpaccio,
   },
   {
     nome: "Bacalhau do Chefe",
     desc: "Bacalhau preparado com a receita exclusiva do chef e acompanhamentos selecionados.",
-    img: bacalhauChefe.url,
+    img: bacalhauChefe,
   },
   {
     nome: "Apfelstrudel",
     desc: "Clássico austríaco de massa folhada com maçã, servido com sorvete de creme.",
-    img: apfelstrudel.url,
+    img: apfelstrudel,
   },
   {
     nome: "Salada de Camarões",
     desc: "Camarões e lulas grelhados com folhas frescas e vinagrete cítrico.",
-    img: saladaCamarao.url,
+    img: saladaCamarao,
   },
   {
     nome: "Filet Mignon Au Poivre",
     desc: "Filé mignon ao molho de pimenta verde, acompanhado de risoto cremoso.",
-    img: filetMignonPoivre.url,
+    img: filetMignonPoivre,
   },
   {
     nome: "Penne ao Milho Amatriciana",
     desc: "Penne al dente com milho, pancetta e molho amatriciana da casa.",
-    img: penneAmatriciana.url,
+    img: penneAmatriciana,
   },
   {
     nome: "Polvo à Lavareiro",
     desc: "Polvo grelhado com batatas, legumes e azeite de oliva aromatizado.",
-    img: polvoLavareiro.url,
+    img: polvoLavareiro,
   },
   {
     nome: "Filet ao Molho Madeira",
     desc: "Filé mignon ao molho madeira com cogumelos e risoto de parmesão.",
-    img: filetMadeira.url,
+    img: filetMadeira,
   },
 ];
 
@@ -147,8 +147,8 @@ const galeria = [
   { src: hero, alt: "Salão interno do Vô Basílio com iluminação acolhedora", span: "sm:col-span-2 sm:row-span-2" },
   { src: massas, alt: "Massas artesanais preparadas à mão", span: "" },
   { src: vinhos, alt: "Adega e taças de vinho tinto", span: "" },
-  { src: spaghettiAlMare.url, alt: "Spaghetti Al Mare com frutos do mar", span: "" },
-  { src: carpaccio.url, alt: "Carpaccio com rúcula e parmesão", span: "" },
+  { src: spaghettiAlMare, alt: "Spaghetti Al Mare com frutos do mar", span: "" },
+  { src: carpaccio, alt: "Carpaccio com rúcula e parmesão", span: "" },
 ];
 
 function Stars({ className = "" }: { className?: string }) {
