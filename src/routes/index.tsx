@@ -540,13 +540,14 @@ function Home() {
                 </Button>
               </Reveal>
 
-              <Reveal delay={120} className="min-h-[340px] border border-border">
+              <Reveal delay={120} className="border border-border">
                 <iframe
                   title="Mapa — Vô Basílio Trattoria e Forneria"
-                  src="https://www.google.com/maps?q=Rua%20Benedito%20Ara%C3%BAjo%2C%20556%2C%20Centro%2C%20S%C3%A3o%20Jo%C3%A3o%20da%20Boa%20Vista%20-%20SP&output=embed"
+                  src="https://www.google.com/maps?q=Rua%20Benedito%20Ara%C3%BAjo%2C%20556%2C%20Centro%2C%20S%C3%A3o%20Jo%C3%A3o%20da%20Boa%20Vista%20-%20SP&z=16&hl=pt-BR&output=embed"
                   loading="lazy"
+                  allowFullScreen
                   referrerPolicy="no-referrer-when-downgrade"
-                  className="h-full min-h-[340px] w-full"
+                  className="block h-[340px] w-full sm:h-[420px] lg:h-[520px]"
                 />
               </Reveal>
             </div>
